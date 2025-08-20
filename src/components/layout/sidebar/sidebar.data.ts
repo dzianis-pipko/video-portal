@@ -28,7 +28,8 @@ export const SIDEBAR_DATA: ISidebarItem[] = [
 	{
 		icon: Gamepad2,
 		label: 'Video games',
-		link: PUBLIC_PAGE.VIDEO_GAMES
+		link: PUBLIC_PAGE.VIDEO_GAMES,
+		isBottomBorder: true
 	},
 	{
 		icon: TvMinimalPlay,
@@ -61,7 +62,7 @@ export const MORE_SIDEBAR_DATA = [
 	},
 	{
 		icon: CircleAlert,
-		label: 'Send eedback',
+		label: 'Send feedback',
 		link: PUBLIC_PAGE.FEEDBACK
 	}
 ]

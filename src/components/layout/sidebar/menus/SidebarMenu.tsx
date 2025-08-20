@@ -10,7 +10,7 @@ interface Props {
 const SidebarMenu = ({ title, menu }: Props) => {
 	return (
 		<nav>
-			{title && <div>{title}</div>}
+			{title && <div className='opacity-40 uppercase text-xs font-medium mb-3'>{title}</div>}
 			<ul>
 				{menu.map(menuItem => (
 					<MenuItem
