@@ -12,6 +12,14 @@ class Publick_page {
 
 	SETTINGS = 'settings'
 	FEEDBACK = 'feedback'
+
+	VIDEO(path: string) {
+		return `/v/${path}`
+	}
+
+	CHANNEL(path: string) {
+		return `/c/${path}`
+	}
 }
 
 export const PUBLIC_PAGE = new Publick_page()
