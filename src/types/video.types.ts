@@ -20,4 +20,13 @@ export interface IVideo {
 	// updatedAt
 	// playlists
 	// watchHistories
+	publicId: string
+}
+
+export interface IDataVideo {
+	limit: number
+	page: number
+	totalCount: number
+	totalPages: number
+	videos: IVideo[]
 }
