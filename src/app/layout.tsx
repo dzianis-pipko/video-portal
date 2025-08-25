@@ -13,7 +13,10 @@ const notoSans = Noto_Sans({
 })
 
 export const metadata: Metadata = {
-	title: 'Video Portal',
+	title: {
+		absolute: 'Video Portal',
+		template: `%s | Video Portal`
+	},
 	description: 'Best app for video watching'
 }
 
