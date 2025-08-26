@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 
 import { PUBLIC_PAGE } from '@/config/public-page.config'
+import { STUDIO_PAGE } from '@/config/studio-page'
 
 import type { ISidebarItem } from './sidebar.types'
 
@@ -58,7 +59,7 @@ export const MORE_SIDEBAR_DATA = [
 	{
 		icon: Settings,
 		label: 'Settings',
-		link: PUBLIC_PAGE.SETTINGS
+		link: STUDIO_PAGE.SETTINGS
 	},
 	{
 		icon: CircleAlert,
