@@ -20,20 +20,21 @@ export default function Explore() {
 	return (
 		<section>
 			<Heading Icon={Compass}>Explore</Heading>
-			<div className='grid grid-cols-5 gap-6'>
+			<div className='grid-5-cols'>
 				{isLoading ? (
 					<SceletonLoader
 						count={6}
 						className='h-36 rounded-md'
 					/>
-				) : (
-					!!data?.data.videos.length &&
+				) : data?.data.videos.length ? (
 					data.data.videos.map(video => (
 						<VideoItem
 							key={video.id}
 							video={video}
 						/>
 					))
+				) : (
+					<div className=''>Explore are temporarily unavailable</div>
 				)}
 			</div>
 		</section>

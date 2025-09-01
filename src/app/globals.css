@@ -34,3 +34,9 @@ body {
 	/* background-color: var(--color-bg); */
 	@apply text-white bg-bg text-base;
 }
+
+@layer utilities {
+	.grid-5-cols {
+		@apply grid grid-cols-5 gap-6;
+	}
+}
